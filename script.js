@@ -1,7 +1,24 @@
-const generateBtn = document.getElementById('generate');
-generateBtn.addEventListener("click", calcFib);
+const dig = process.argv[2];
+if (dig>0) calcFibServer()
+function calcFibServer(){
+  const fibby = [];
+  const fibonacci = (position) => {
+    if (position < 2) {
+      return position;}
+    return fibonacci(position - 1) + fibonacci(position - 2);};
+  const fibonacciUpTo = (value) => {
+    if (value > 0) {
+      fibby.push(fibonacci(value));
+      return fibonacciUpTo(value - 1);
+    } else {
+      const reversed = fibby.reverse();
+      console.log(`[${reversed}]`)
+      return value;}};
+  fibonacciUpTo(dig);}
 function calcFib(){
-  const dig = prompt("How many digits do you want to calculate to?");
+  const generateBtn = document.getElementById('generate');
+  generateBtn.addEventListener("click", calcFib);
+  const diggy = prompt("How many digits do you want to calculate to?");
   const fibby = [];
   const fibonacci = (position) => {
     if (position < 2) {
@@ -18,5 +35,4 @@ function calcFib(){
       generateBtn.setAttribute("style", "background-color: rgb(92, 212, 76);", );
       document.getElementById("generate").innerHTML = "Generate another array";
       return value;}};
-  fibonacciUpTo(dig);
-}
+  fibonacciUpTo(diggy);}
