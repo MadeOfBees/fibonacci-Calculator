@@ -1,5 +1,8 @@
-const dig = process.argv[2];
-if (dig>0) calcFibServer()
+if (!process.argv[2]) {var div=0};
+const dig = process.argv[2]
+if (dig>0) {calcFibServer()}else{
+  const generateBtn = document.getElementById('generate');
+  generateBtn.addEventListener("click", calcFib);}
 function calcFibServer(){
   const fibby = [];
   const fibonacci = (position) => {
@@ -16,8 +19,6 @@ function calcFibServer(){
       return value;}};
   fibonacciUpTo(dig);}
 function calcFib(){
-  const generateBtn = document.getElementById('generate');
-  generateBtn.addEventListener("click", calcFib);
   const diggy = prompt("How many digits do you want to calculate to?");
   const fibby = [];
   const fibonacci = (position) => {
