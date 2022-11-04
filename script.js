@@ -6,7 +6,10 @@ function calcFib(){
   const fibonacci = (position) => {
     if (position < 2) {
       return position;}
-    return fibonacci(position - 1) + fibonacci(position - 2);};
+      var sqRootOf5 = Math.sqrt(5);
+      var var1 = (1+sqRootOf5)/2;
+      var var2 = (1-sqRootOf5)/2
+      return Math.round((Math.pow(var1, position) - Math.pow(var2, position)) / sqRootOf5);};
   const fibonacciUpTo = (value) => {
     if (value > 0) {
       fibby.push(fibonacci(value));
