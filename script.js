@@ -5,7 +5,7 @@ document.getElementById('generate').addEventListener("click", function () {
     if (position < 2) return position;
     return Math.round((Math.pow((1 + Math.sqrt(5)) / 2, position) - Math.pow((1 - Math.sqrt(5)) / 2, position)) / Math.sqrt(5));};
   const fibonacciUpTo = (value) => {
-    if (value > 70 || value < -1 || !Number.isInteger(parseInt(dig))){
+    if (value > 70 || value < -1 || !Number.isInteger(parseInt(value))){
       alert(`Value can only be a real whole number between 1 and 70`)
       return
     }else{
