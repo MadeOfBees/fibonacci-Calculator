@@ -16,4 +16,5 @@ document.getElementById('generate').addEventListener("click", function () {
         document.querySelector("#screenText").value = `[` + fibby.reverse() + `]`;
         document.getElementById('generate').setAttribute("style", "background-color: rgb(92, 212, 76);",).innerHTML = "Generate another array";
         return value;};};};
-    fibonacciUpTo(dig)});
+    fibonacciUpTo(dig)
+});
