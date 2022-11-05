@@ -23,7 +23,7 @@ function calcFib() {
       generateBtn.setAttribute("style", "background-color: rgb(92, 212, 76);",);
       document.getElementById("generate").innerHTML = "Generate another array";
       return value;
-    }
+    };
   };
   fibonacciUpTo(dig);
-}
+};
