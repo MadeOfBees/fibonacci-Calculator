@@ -5,8 +5,8 @@ document.getElementById('generate').addEventListener("click", function () {
     if (position < 2) return position;
     return Math.round((Math.pow((1 + Math.sqrt(5)) / 2, position) - Math.pow((1 - Math.sqrt(5)) / 2, position)) / Math.sqrt(5));};
   const fibonacciUpTo = (value) => {
-    if (value > 70 || value < -1) {
-      alert(`Number can only be between 1 and 70`)
+    if (value > 70 || value < -1 || !Number.isInteger(parseInt(dig))){
+      alert(`Value can only be a real whole number between 1 and 70`)
       return
     }else{
       if (value > 0) {
@@ -16,4 +16,4 @@ document.getElementById('generate').addEventListener("click", function () {
         document.querySelector("#screenText").value = `[` + fibby.reverse() + `]`;
         document.getElementById('generate').setAttribute("style", "background-color: rgb(92, 212, 76);",).innerHTML = "Generate another array";
         return value;};};};
-  fibonacciUpTo(dig);});
+    fibonacciUpTo(dig)});
