@@ -8,8 +8,7 @@ function calcFib() {
   const fibonacciUpTo = (value) => {
     if (value > 0) {
       fibby.push(fibonacci(value));
-      return fibonacciUpTo(value - 1);
-    } else {
+      return fibonacciUpTo(value - 1);} else {
       document.querySelector("#screenText").value = `[`+fibby.reverse()+`]`;
       document.getElementById('generate').setAttribute("style", "background-color: rgb(92, 212, 76);",);
       document.getElementById("generate").innerHTML = "Generate another array";
