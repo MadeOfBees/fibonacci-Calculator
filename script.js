@@ -1,5 +1,4 @@
-document.getElementById('generate').addEventListener("click", calcFib);
-function calcFib() {
+document.getElementById('generate').addEventListener("click", function(){
   const dig = prompt("How many digits do you want to calculate to?");
   const fibby = [];
   const fibonacci = (position) => {
@@ -13,4 +12,4 @@ function calcFib() {
       document.getElementById('generate').setAttribute("style", "background-color: rgb(92, 212, 76);",);
       document.getElementById("generate").innerHTML = "Generate another array";
       return value;};};
-  fibonacciUpTo(dig);};
+  fibonacciUpTo(dig);});
