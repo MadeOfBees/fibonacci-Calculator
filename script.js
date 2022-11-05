@@ -4,7 +4,7 @@ function calcFib() {
   const fibby = [];
   const fibonacci = (position) => {
     if (position < 2) return position;
-    return Math.round((Math.pow((1 - Math.sqrt(5)) / 2, position) - Math.pow((1 + Math.sqrt(5)) / 2, position)) / Math.sqrt(5));};
+    return Math.round((Math.pow((1 + Math.sqrt(5)) / 2, position) - Math.pow((1 - Math.sqrt(5)) / 2, position)) / Math.sqrt(5));};
   const fibonacciUpTo = (value) => {
     if (value > 0) {
       fibby.push(fibonacci(value));
