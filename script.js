@@ -11,9 +11,7 @@ function calcFib() {
       fibby.push(fibonacci(value));
       return fibonacciUpTo(value - 1);
     } else {
-      const reversed = fibby.reverse();
-      const printText = document.querySelector("#screenText");
-      printText.value = `[${reversed}]`;
+      document.querySelector("#screenText").value = `[`+fibby.reverse()+`]`;
       generateBtn.setAttribute("style", "background-color: rgb(92, 212, 76);",);
       document.getElementById("generate").innerHTML = "Generate another array";
       return value;};};
