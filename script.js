@@ -15,7 +15,7 @@ document.getElementById('generate').addEventListener("click", function () {
         return fibonacciUpTo(value - 1);
       } else {
         document.querySelector("#screenText").value = `[` + fibby.reverse() + `]`;
-        document.getElementById('generate').setAttribute("style", "background-color: rgb(92, 212, 76);",).innerHTML = "Generate another array";
+        document.getElementById('generate').setAttribute("style", "background-color: rgb(92, 212, 76);",);
         return value;
       };
     };
