@@ -39,22 +39,20 @@ function App() {
     fibonacciUpTo(digit);
   }
   return (
-    <body>
-      <div class="wrapper">
-        <div class="card">
-          <div class="card-header">
+      <div className="wrapper">
+        <div className="card">
+          <div className="card-header">
             <h2>Fibonacci Calculator: MadeOfBees</h2>
           </div>
-          <div class="card-body">
+          <div className="card-body">
             
           <textarea id="screenText" rows="10" cols="50" placeholder="Your Fibonacci sequence will appear here"></textarea>
           </div>
-          <div class="card-footer">
-            <button onClick={generateButton} id="generate" class="btn">Click to begin calculating</button>
+          <div className="card-footer">
+            <button onClick={generateButton} id="generate" className="btn">Click to begin calculating</button>
           </div>
         </div>
       </div>
-    </body>
   );
 }
 
