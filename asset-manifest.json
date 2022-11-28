@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/BeesPortfolio/static/css/main.69d6d6de.css",
-    "main.js": "/BeesPortfolio/static/js/main.deab5865.js",
-    "static/js/787.d2ffc6f3.chunk.js": "/BeesPortfolio/static/js/787.d2ffc6f3.chunk.js",
-    "index.html": "/BeesPortfolio/index.html",
-    "main.69d6d6de.css.map": "/BeesPortfolio/static/css/main.69d6d6de.css.map",
-    "main.deab5865.js.map": "/BeesPortfolio/static/js/main.deab5865.js.map",
-    "787.d2ffc6f3.chunk.js.map": "/BeesPortfolio/static/js/787.d2ffc6f3.chunk.js.map"
+    "main.css": "/fibonacci-Calculator/static/css/main.69d6d6de.css",
+    "main.js": "/fibonacci-Calculator/static/js/main.10e0b139.js",
+    "static/js/787.d2ffc6f3.chunk.js": "/fibonacci-Calculator/static/js/787.d2ffc6f3.chunk.js",
+    "index.html": "/fibonacci-Calculator/index.html",
+    "main.69d6d6de.css.map": "/fibonacci-Calculator/static/css/main.69d6d6de.css.map",
+    "main.10e0b139.js.map": "/fibonacci-Calculator/static/js/main.10e0b139.js.map",
+    "787.d2ffc6f3.chunk.js.map": "/fibonacci-Calculator/static/js/787.d2ffc6f3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69d6d6de.css",
-    "static/js/main.deab5865.js"
+    "static/js/main.10e0b139.js"
   ]
 }
