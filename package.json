@@ -1,6 +1,6 @@
 {
   "name": "fib-generator",
-  "homepage": "https://MadeOfBees.github.io/BeesPortfolio",
+  "homepage": "https://madeofbees.github.io/fibonacci-Calculator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
