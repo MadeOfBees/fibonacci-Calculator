@@ -6,7 +6,7 @@
 
 
 ## Installation/Instructions: 
-    To begin click on the pages link.
+ To begin click on the pages link below: 
  https://madeofbees.github.io/fibonacci-Calculator/
  
  Then when you're on the page click the big red button to begin then complete the on-screen instructions until your array is generated, don't disable popups. 
