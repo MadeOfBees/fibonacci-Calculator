@@ -1,5 +1,5 @@
 function App() {
-  function onButt() {
+  function generateButton() {
     const digit = prompt("How many digits do you want to calculate to?");
     const fibby = [];
     const fibonacci = (position) => {
@@ -23,6 +23,7 @@ function App() {
     };
     fibonacciUpTo(digit)
   };
+
   return (
     <body>
       <div class="wrapper">
@@ -39,7 +40,7 @@ function App() {
             ></textarea>
           </div>
           <div class="card-footer">
-            <button onClick={onButt} id="generate" class="btn">Click to begin calculating</button>
+            <button onClick={generateButton} id="generate" class="btn">Click to begin calculating</button>
           </div>
         </div>
       </div>
