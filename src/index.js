@@ -1,8 +1,62 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css';
+
+const reportWebVitals = onPerfEntry => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
+    });
+  }
+};
+
+function App() {
+  function generateButton() {
+    const digit = prompt("How many digits do you want to calculate to?");
+    const fibby = [];
+    const fibonacci = (position) => {
+      if (position < 2) return position;
+      return Math.round((Math.pow((1 + Math.sqrt(5)) / 2, position) - Math.pow((1 - Math.sqrt(5)) / 2, position)) / Math.sqrt(5));
+    };
+    const fibonacciUpTo = (value) => {
+      if (value > 70 || value < -1 || !Number.isInteger(parseInt(value))) {
+        alert(`Value can only be a real whole number between 1 and 70`)
+        return
+      } else {
+        if (value > 0) {
+          fibby.push(fibonacci(value));
+          return fibonacciUpTo(value - 1);
+        } else {
+          document.querySelector("#screenText").value = `[` + fibby.reverse() + `]`;
+          document.getElementById('generate').setAttribute("style", "background-color: rgb(92, 212, 76);",);
+        } 
+      }
+    };
+    fibonacciUpTo(digit);
+  }
+  return (
+    <body>
+      <div class="wrapper">
+        <div class="card">
+          <div class="card-header">
+            <h2>Fibonacci Calculator: MadeOfBees</h2>
+          </div>
+          <div class="card-body">
+            
+          <textarea id="screenText" rows="10" cols="50" placeholder="Your Fibonacci sequence will appear here"></textarea>
+          </div>
+          <div class="card-footer">
+            <button onClick={generateButton} id="generate" class="btn">Click to begin calculating</button>
+          </div>
+        </div>
+      </div>
+    </body>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
